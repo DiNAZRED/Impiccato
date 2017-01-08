@@ -1,0 +1,204 @@
+<html>
+	<head>
+		<title>
+			IMPICATTO 2.0
+		</title>
+		<script src="Impiccato 2 js.js" >
+		</script>
+		<link rel="stylesheet" type="text/css" href="Impiccato 2 CSS.css" />
+		<base href="C:\Users\albin\Desktop\Impiccato 2.0\Immagini\" />
+	</head>
+	<body id="sfondo">
+		<h1 class="scritte" >
+			IMPICCATO <span style="font-size: 16pt" >(v2.0)</span>
+		</h1>
+		<p id="informazioniPerGiocare" class="scritte" >
+			Inserire qui il nome dello sfidante: 
+			<input type="text" id="nomeSfidante" onclick="PulisciCasella( nomeSfidante );" /><br />
+			Inserire qui il nome dello sfidato:
+			<input type="text" id="nomeSfidato" onclick="PulisciCasella( nomeSfidato );" /><br />
+			Inserire qui parola da indovinare:
+			<input type="password" id="parolaDaIndovinare" onclick="PulisciCasella( parolaDaIndovinare );" /><br />
+			Cliccate il bottone per iniziare:
+			<input type="button" id="b1" value=" INIZIA " onclick="ControlloIniziale();" />
+		</p>
+		<center>
+			<table id="tabellaParola" border="1" style="display: none">
+				<tr>
+					<td id="cella1" style="display: none" >
+						<input type='text' id='InputA' class='inputLettere' value='___' size=1 disabled />
+					</td>
+					<td id="cella2" style="display: none" >
+						<input type='text' id='InputB' class='inputLettere' value='___' size=1 disabled />
+					</td>
+					<td id="cella3" style="display: none" >
+						<input type='text' id='InputC' class='inputLettere' value='___' size=1 disabled />
+					</td>
+					<td id="cella4" style="display: none" >
+						<input type='text' id='InputD' class='inputLettere' value='___' size=1 disabled />
+					</td>
+					<td id="cella5" style="display: none" >
+						<input type='text' id='InputE' class='inputLettere' value='___' size=1 disabled />
+					</td>
+					<td id="cella6" style="display: none" >
+						<input type='text' id='InputF' class='inputLettere' value='___' size=1 disabled />
+					</td>
+					<td id="cella7" style="display: none" >
+						<input type='text' id='InputG' class='inputLettere' value='___' size=1 disabled />
+					</td>
+					<td id="cella8" style="display: none" >
+						<input type='text' id='InputH' class='inputLettere' value='___' size=1 disabled />
+					</td>
+					<td id="cella9" style="display: none" >
+						<input type='text' id='InputI' class='inputLettere' value='___' size=1 disabled />
+					</td>
+					<td id="cella10" style="display: none" >
+						<input type='text' id='InputJ' class='inputLettere' value='___' size=1 disabled />
+					</td>
+					<td id="cella11" style="display: none" >
+						<input type='text' id='InputK' class='inputLettere' value='___' size=1 disabled />
+					</td>
+					<td id="cella12" style="display: none" >
+						<input type='text' id='InputL' class='inputLettere' value='___' size=1 disabled />
+					</td>
+					<td id="cella13" style="display: none" >
+						<input type='text' id='InputM' class='inputLettere' value='___' size=1 disabled />
+					</td>
+					<td id="cella14" style="display: none" >
+						<input type='text' id='InputN' class='inputLettere' value='___' size=1 disabled />
+					</td>
+					<td id="cella15" style="display: none" >
+						<input type='text' id='InputO' class='inputLettere' value='___' size=1 disabled />
+					</td>
+				</tr>
+			</table>
+		</center>
+		<br />
+		<table id="tabellaLettere" style="display: none" >
+			<tr>
+				<td>
+					<table class="tabellaPerLettere" id="tabLettereSinistra" >
+						<tr>
+							<td></td>
+							<td colspan="2" >
+								<input type="button" id="letteraA" class="lettere" value="A" size=1 onclick="ControlloLettera( letteraA );" />
+							</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>
+								<input type="button" id="letteraB" class="lettere" value="B" size=1 onclick="ControlloLettera( letteraB );" />
+							</td>
+							<td>
+								<input type="button" id="letteraC" class="lettere" value="C" size=1 onclick="ControlloLettera( letteraC );" />
+							</td>
+							<td>
+								<input type="button" id="letteraD" class="lettere" value="D" size=1 onclick="ControlloLettera( letteraD );" />
+							</td>
+							<td>
+								<input type="button" id="letteraE" class="lettere" value="E" size=1 onclick="ControlloLettera( letteraE );" />
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<input type="button" id="letteraF" class="lettere" value="F" size=1 onclick="ControlloLettera( letteraF );" />
+							</td>
+							<td>
+								<input type="button" id="letteraG" class="lettere" value="G" size=1 onclick="ControlloLettera( letteraG );" />
+							</td>
+							<td>
+								<input type="button" id="letteraH" class="lettere" value="H" size=1 onclick="ControlloLettera( letteraH );" />
+							</td>
+							<td>
+								<input type="button" id="letteraI" class="lettere" value="I" size=1 onclick="ControlloLettera( letteraI );" />
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<input type="button" id="letteraJ" class="lettere" value="J" size=1 onclick="ControlloLettera( letteraJ );" />
+							</td>
+							<td>
+								<input type="button" id="letteraK" class="lettere" value="K" size=1 onclick="ControlloLettera( letteraK );" />
+							</td>
+							<td>
+								<input type="button" id="letteraL" class="lettere" value="L" size=1 onclick="ControlloLettera( letteraL );" />
+							</td>
+							<td>
+								<input type="button" id="letteraM" class="lettere" value="M" size=1 onclick="ControlloLettera( letteraM );" />
+							</td>
+						</tr>
+					</table>
+				</td>
+				<td>
+					<img src='inizio.png' id='immagineImpiccato' />
+				</td>
+				<td>
+					<table id="tabLettereDestra" class="tabellaPerLettere" >
+						<tr>
+							<td></td>
+							<td colspan="2" >
+								<input type="button" id="letteraN" class="lettere" value="N" size=1 onclick="ControlloLettera( letteraN );" />
+							</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>
+								<input type="button" id="letteraO" class="lettere" value="O" size=1 onclick="ControlloLettera( letteraO );" />
+							</td>
+							<td>
+								<input type="button" id="letteraP" class="lettere" value="P" size=1 onclick="ControlloLettera( letteraP );" />
+							</td>
+							<td>
+								<input type="button" id="letteraQ" class="lettere" value="Q" size=1 onclick="ControlloLettera( letteraQ );" />
+							</td>
+							<td>
+								<input type="button" id="letteraR" class="lettere" value="R" size=1 onclick="ControlloLettera( letteraR );" />
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<input type="button" id="letteraS" class="lettere" value="S" size=1 onclick="ControlloLettera( letteraS );" />
+							</td>
+							<td>
+								<input type="button" id="letteraT" class="lettere" value="T" size=1 onclick="ControlloLettera( letteraT );" />
+							</td>
+							<td>
+								<input type="button" id="letteraU" class="lettere" value="U" size=1 onclick="ControlloLettera( letteraU );" />
+							</td>
+							<td>
+								<input type="button" id="letteraV" class="lettere" value="V" size=1 onclick="ControlloLettera( letteraV );" />
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<input type="button" id="letteraW" class="lettere" value="W" size=1 onclick="ControlloLettera( letteraW );" />
+							</td>
+							<td>
+								<input type="button" id="letteraX" class="lettere" value="X" size=1 onclick="ControlloLettera( letteraX );" />
+							</td>
+							<td>
+								<input type="button" id="letteraY" class="lettere" value="Y" size=1 onclick="ControlloLettera( letteraY );" />
+							</td>
+							<td>
+								<input type="button" id="letteraZ" class="lettere" value="Z" size=1 onclick="ControlloLettera( letteraZ );" />
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+		<table border="2" id="coloreSfondo">
+			<tr>
+				<td>
+					<span id="scrittaRosso" class="scritte" >ROSSO:</span><sub><input type="range" id="rosso" min="0" max="255" value="255" onmousemove="Colore();"></sub>
+				</td>
+				<td>
+					<span id="scrittaVerde" class="scritte" >VERDE:</span><sub><input type="range" id="verde" min="0" max="255" value="255" onmousemove="Colore();"></sub>
+				</td>
+				<td>	
+					<span id="scrittaBlu" class="scritte" >BLU:</span><sub><input type="range" id="blu" min="0" max="255" value="255" onmousemove="Colore();"></sub>
+				</td>
+			</tr>
+		</table>
+	</body>
+</html>
