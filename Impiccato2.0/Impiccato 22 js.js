@@ -180,7 +180,7 @@ function Colore()
 	var coloreSfondo = "rgb("+ rosso.value +","+ verde.value +","+ blu.value +")";
 	var immagine = 0;
 	var ImmaginiDimensioni = new Array ( "", "7%, 7%, 50%", "18%", "7%, 75%" );
-	var ImmaginiSfondo = new Array( "", "url('Rosso/sole.gif'), url('Rosso/sole.gif'), url('Rosso/fuoco.gif')", "url('Verde/slime.gif')", "url('Blu/acqua.gif'), url('Blu/pesciolino.gif')" );
+	var ImmaginiSfondo = new Array( "", "url('sole.gif'), url('sole.gif'), url('fuoco.gif')", "url('slime.gif')", "url('acqua.gif'), url('pesciolino.gif')" );
 	var ImmaginiRipeti = new Array( "", "no-repeat, no-repeat, repeat", "repeat", "repeat, no-repeat" );
 	var ImmaginiPosizione = new Array( "", "left top, right top, left top", "", "bottom, 85% 50%" );
 	
